@@ -25,13 +25,13 @@ const Nav = () => {
                     Home
                 </li></a>
                 <a href="#about"><li className="item">
-                    About me
+                    About
                 </li></a>
                 <a href="#projects"><li className="item">
                     Projects
                 </li></a>
                 <a href="#contact"><li className="item">
-                    Contact me
+                    Contact
                 </li></a>
             </ul>
 
