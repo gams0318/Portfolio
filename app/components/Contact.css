@@ -1,0 +1,111 @@
+.form {
+    background-color: black;
+    width: 100%;
+}
+
+.form-container {
+    width: 90%;
+    background-color: inherit;
+    margin: auto;
+    color: white;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-text h1 {
+    font-size: 50px;
+    padding-bottom: 1rem;
+}
+
+.form-text span {
+    font-size: 30px;
+
+}
+
+form {
+    width: 400px;
+}
+
+.form-heading {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+form h1 {
+    background: #12c2e9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form span {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+button {
+    margin: .5rem;
+    background-color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    background: #12c2e9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+input {
+    padding: 0.3rem 0.3rem;
+    background-color: aliceblue;
+}
+
+textarea {
+    height: 100px;
+    padding: 0.3rem;
+    background-color: aliceblue;
+}
+
+@media only screen and (max-width:780px) {
+    .form-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+}

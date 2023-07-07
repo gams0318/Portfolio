@@ -1,0 +1,140 @@
+nav {
+    background-color: black;
+    /* padding: 2rem 0; */
+
+}
+
+.nav-container {
+
+    color: white;
+    padding: 1rem 0;
+    margin: auto;
+    width: 90%;
+    background-color: inherit;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1500px;
+}
+
+.nav-container h1 {
+    font-style: italic;
+    font-size: 25px;
+    text-transform: uppercase;
+
+}
+
+.nav-container span:nth-child(1) {
+    font-size: 15px;
+    ;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    padding: 0 4px;
+    ;
+}
+
+.nav-menu a {
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: auto;
+}
+
+.nav-menu a:hover {
+    background: #12c2e9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-right {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-right button {
+    background: #12c2e9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: .5rem 1rem;
+    font-weight: 300;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.nav-right button:hover {
+    transform: translateY(-2px);
+}
+
+.bar {
+    background-color: white;
+    display: block;
+    width: 23px;
+    height: 3px;
+    margin: 4px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle {
+    display: none;
+}
+
+@media only screen and (max-width:780px) {
+    .nav-menu {
+        position: fixed;
+        top: 4rem;
+        width: 100%;
+        padding: 2rem 0;
+        flex-direction: column;
+        background-color: black;
+        align-items: center;
+        transition: 0.3s;
+        right: -100%;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+    }
+
+    .nav-menu.active {
+        right: 0;
+        margin: 0rem 0;
+        padding: 10px;
+    }
+
+    .nav-menu a {
+        padding: 1rem;
+    }
+
+    .toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(135deg);
+    }
+}

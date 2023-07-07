@@ -1,0 +1,56 @@
+.projects {
+    width: 100%;
+    height: fit-content;
+    padding: 2rem;
+    background-color: white;
+}
+
+.project-container {
+    display: flex;
+    width: 89%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projects h1 {
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: .5rem;
+    font-weight: 800;
+}
+
+.project img {
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 2rem 2rem;
+
+    height: 200px;
+    transition: .3s ease-in-out;
+}
+
+.project img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.project p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: .3s;
+}
+
+.project p:hover {
+    transform: scaleX(1.2);
+    text-shadow: 1px 2px 1px grey;
+}

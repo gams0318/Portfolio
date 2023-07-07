@@ -1,0 +1,56 @@
+.Divider {
+
+    width: 100%;
+    background-color: black;
+}
+
+.Divider-container {
+    padding: 3rem 0;
+    background-color: inherit;
+    width: 89%;
+    margin: auto;
+    max-width: 1500px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Divider-container h1 {
+    background: #12c2e9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 45px;
+}
+
+.Divider-container span {
+    font-size: 3rem;
+    color: white;
+}
+
+@media only screen and (min-width:781px) and (max-width:1130px) {
+    .Divider-container h1 {
+        font-size: 35px;
+    }
+
+    .Divider-container span {
+        font-size: 2rem;
+
+    }
+}
+
+@media only screen and (max-width :780px) {
+    .Divider-container {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+}
