@@ -16,9 +16,10 @@ const Nav = () => {
     const menuHandler = () => {
         setOpenMenu(!openMenu)
     }
+
     return (<><nav>
         <div className="nav-container">
-            <h1>Gams<span>.com</span></h1>
+            <h1>Gams<span>.gj</span></h1>
 
             <ul className={openMenu ? "nav-menu active" : "nav-menu "}>
                 <a href="#home"><li className="item">
@@ -36,7 +37,7 @@ const Nav = () => {
             </ul>
 
             <div className="nav-right">
-                <button>Hire me</button>
+                <a href="https://drive.google.com/file/d/1vsEFs0dCgpDKkeUKHwTQhd44JUSOxX2m/view?usp=drivesdk" target='_blank'> <button >Resume</button></a>
             </div>
             <div onClick={menuHandler} className={openMenu ? "toggle active" : "toggle"}>
                 <span className="bar"></span>
